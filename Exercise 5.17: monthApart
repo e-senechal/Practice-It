@@ -14,21 +14,21 @@
 
 
 
-public class test {
+public class Test {
 	public static void main(String[] args) {
 		boolean x = monthApart(9, 19, 7, 24);
 		System.out.print(x);
 	}
 
-	static boolean monthApart(int month1, int day1, int month2, int day2) {
+static boolean monthApart(int month1, int day1, int month2, int day2) {
 		int monthDiff = Math.abs(month1 - month2);
 		if(monthDiff > 1) {
 			return true;
 		}
-		else if(month1 > month2 && day2 >= day1) {
+		else if(month1 > month2 && day2 <= day1) {
 			return true;
 		}
-		else if(month2 > month1 && day2 <= day1) {
+		else if(month2 > month1 && day2 >= day1) {
 			return true;
 		}
 		else {
