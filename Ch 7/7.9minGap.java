@@ -26,23 +26,22 @@ import java.util.Arrays;
 
 public class Test {
 	public static void main(String[] args) {
-		int[] list = {1, 3, 6, 7, 12};
-		int[] list2 = {3, 5, 11, 4, 8};
+		int[] list = { 1, 3, 6, 7, 12 };
+		int[] list2 = { 3, 5, 11, 4, 8 };
 		int result = minGap(list2);
 		System.out.print(result);
-
-
 	}
-	// gap = a[i+1] - ai
+
+	// gap = a[i+1] - a[i]
 	public static int minGap(int[] array) {
 		int gap = 0;
-		if(array.length < 3) {
+		if (array.length < 3) {
 			return 0;
 		}
 		int minGap = array[1] - array[0];
-		for(int i = array.length-1; i > 0; i--) {
-			gap = array[i] - array[i-1];
-			if(gap < minGap) {
+		for (int i = array.length - 1; i > 0; i--) {
+			gap = array[i] - array[i - 1];
+			if (gap < minGap) {
 				minGap = gap;
 			}
 		}
