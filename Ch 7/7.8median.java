@@ -21,7 +21,6 @@ public class Test {
 	// Self sorting method answer
 	public static int median(int[] array) {
 		int temp = 0;
-		int smallest = 0;
 		for (int i = 0; i < array.length - 1; i++) {
 			for (int j = i + 1; j < array.length; j++) {
 				if (array[j] < array[i]) {
