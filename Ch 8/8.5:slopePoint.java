@@ -8,7 +8,7 @@
  * IllegalArgumentException in this case.
 */
 
-public class Test {
+public class Point {
 	private int x;
 	private int y;
 	
