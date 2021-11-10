@@ -6,7 +6,7 @@
  * coordinates are the same.
 */
 
-public class Test {
+public class Point {
 	private int x;
 	private int y;
 
