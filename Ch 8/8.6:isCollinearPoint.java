@@ -14,7 +14,7 @@
  *four digits past the decimal point before you compare them.
  */
 
-public class Test {
+public class Point {
 	private int x;
 	private int y;
 	
