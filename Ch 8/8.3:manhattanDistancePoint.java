@@ -9,7 +9,7 @@
  * coordinates; in other words, the difference in x plus the difference in y between the points.
 */
 
-public class Test {
+public class Point {
 	private int x;
 	private int y;
 
